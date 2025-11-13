@@ -1,0 +1,2 @@
+org.springframework.boot.env.EnvironmentPostProcessor=\
+ com.sapling.module.system.infrastructure.common.framework.configuration.CustomEnvironmentPostProcessor

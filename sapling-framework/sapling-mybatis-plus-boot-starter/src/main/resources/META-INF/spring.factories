@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.sapling.frame.mybatis.config.SaplingMybatisAutoConfiguration
