@@ -2,12 +2,12 @@
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-1.8-blue.svg)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7.18-brightgreen.svg)
-![MyBatis Plus](https://img.shields.io/badge/MyBatis%20Plus-3.5.3.1-orange.svg)
+![Java](https://img.shields.io/badge/Java-17-blue.svg)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.5-brightgreen.svg)
+![MyBatis Plus](https://img.shields.io/badge/MyBatis%20Plus-3.5.5-orange.svg)
 ![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)
 
-基于 Spring Boot 2.7.18 + DDD 架构的企业级微服务开发脚手架
+基于 Spring Boot 3.2.5 + DDD 架构的企业级微服务开发脚手架
 
 [快速开始](#快速开始) • [技术架构](#技术架构) • [项目结构](#项目结构) • [核心组件](#核心组件) • [开发指南](#开发指南)
 
@@ -40,16 +40,16 @@ Sapling Service 是一个基于 Spring Boot 的企业级微服务开发脚手架
 
 | 技术 | 版本 | 说明 |
 |------|------|------|
-| **Spring Boot** | 2.7.18 | 核心框架 |
-| **JDK** | 1.8 | Java 开发工具包 |
+| **Spring Boot** | 3.2.5 | 核心框架 |
+| **JDK** | 17 | Java 开发工具包 |
 | **Maven** | 3.6+ | 项目构建工具 |
 
 ### 数据持久层
 
 | 技术 | 版本 | 说明 |
 |------|------|------|
-| **MyBatis Plus** | 3.5.3.1 | ORM 框架 |
-| **MySQL** | 8.0.28 | 关系型数据库 |
+| **MyBatis Plus** | 3.5.5 | ORM 框架 |
+| **MySQL** | 8.0.33 | 关系型数据库 |
 | **PostgreSQL** | 支持 | 关系型数据库 |
 | **达梦数据库** | 7.1.4.74 | 国产数据库 |
 | **人大金仓** | 8.6.0 | 国产数据库 |
@@ -61,8 +61,8 @@ Sapling Service 是一个基于 Spring Boot 的企业级微服务开发脚手架
 | 技术 | 版本 | 说明 |
 |------|------|------|
 | **Redis** | - | 分布式缓存 |
-| **Redisson** | 3.22.0 | Redis 客户端 |
-| **Kafka** | 3.4.0 | 消息队列 |
+| **Redisson** | 3.27.2 | Redis 客户端 |
+| **Kafka** | 3.6.1 | 消息队列 |
 
 ### 搜索引擎
 
@@ -75,21 +75,21 @@ Sapling Service 是一个基于 Spring Boot 的企业级微服务开发脚手架
 
 | 技术 | 版本 | 说明 |
 |------|------|------|
-| **Lombok** | 1.18.20 | 简化 Java 代码 |
-| **MapStruct** | 1.4.2 | 对象映射工具 |
+| **Lombok** | 1.18.30 | 简化 Java 代码 |
+| **MapStruct** | 1.5.5 | 对象映射工具 |
 | **Hutool** | 5.8.40 | Java 工具类库 |
 | **Guava** | 33.4.5 | Google 工具库 |
 | **Fastjson** | 1.2.83 | JSON 处理 |
-| **Jackson** | 2.13.5 | JSON 处理 |
+| **Jackson** | 2.15.4 | JSON 处理 |
 
 ### 业务组件
 
 | 技术 | 版本 | 说明 |
 |------|------|------|
-| **LiteFlow** | 2.15.0 | 轻量级规则引擎 |
+| **LiteFlow** | 2.12.4.2 | 轻量级规则引擎 |
 | **TLog** | 1.5.2 | 分布式链路追踪 |
-| **COLA** | 4.0.0 | 阿里 COLA 架构 |
-| **Resilience4j** | 1.7.1 | 弹性容错框架 |
+| **COLA** | 5.0.0 | 阿里 COLA 架构 |
+| **Resilience4j** | 2.2.0 | 弹性容错框架 |
 | **Forest** | 1.6.4 | 声明式 HTTP 客户端 |
 | **Ko-Time** | 2.5.0 | 性能分析工具 |
 
@@ -186,12 +186,14 @@ sapling-service/
 
 ### 环境要求
 
-- JDK 1.8+
+- JDK 17+（必须）
 - Maven 3.6+
 - MySQL 5.7+ / PostgreSQL 9.6+ / 国产数据库
 - Redis 5.0+（可选）
 - Kafka 2.8+（可选）
 - Elasticsearch 7.x+（可选）
+
+> **重要提示**: Spring Boot 3.x 要求最低 Java 17 版本
 
 ### 安装步骤
 
