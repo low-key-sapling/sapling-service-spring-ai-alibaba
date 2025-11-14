@@ -12,6 +12,7 @@
     <modules>
         <module>sapling-spring-boot-starter-web</module>
         <module>sapling-spring-boot-starter-kafka</module>
+        <module>sapling-spring-boot-starter-ai-alibaba</module>
         <module>sapling-framework-boot-common</module>
         <module>sapling-framework-boot-core</module>
         <module>sapling-mybatis-plus-boot-starter</module>

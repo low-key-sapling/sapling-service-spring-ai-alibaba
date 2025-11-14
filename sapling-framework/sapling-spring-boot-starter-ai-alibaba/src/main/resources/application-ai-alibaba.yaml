@@ -1,0 +1,36 @@
+spring:
+  ai:
+    alibaba:
+      enabled: true
+      # API Key should be configured via environment variable or encrypted in production
+      api-key: ${AI_ALIBABA_API_KEY:}
+      base-url: https://dashscope.aliyuncs.com/api/v1
+      
+      chat:
+        model: qwen-turbo
+        temperature: 0.7
+        max-tokens: 2000
+        top-p: 0.8
+        enable-stream: true
+        
+      embedding:
+        model: text-embedding-v1
+        dimensions: 1536
+        
+      image:
+        model: wanx-v1
+        size: 1024*1024
+        n: 1
+        
+      tool:
+        enabled: true
+        enabled-tools: []
+        max-retries: 3
+        
+      cache:
+        enabled: false
+        ttl: 3600
+        
+      metrics:
+        enabled: true
+        export-interval: 60
